@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img/icon.png"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/game_page.css" media="screen">
+    <link rel="stylesheet" href="css/media.css" media="screen">
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+</head>
+<body id="game">
+    <audio src="/music/st_theme_song.mp3" hidden autoplay loop control></audio>
+    
+    <div class="container">
+
+        <div id="images"></div>
+
+        <div id="secret-word"></div>
+
+        <div id="keybord">
+            <div class="keys">
+                <button id="key-A" onclick="verifyChoosedLetter('A')">A</button>
+                <button id="key-B" onclick="verifyChoosedLetter('B')">B</button>
+                <button id="key-C" onclick="verifyChoosedLetter('C')">C</button>
+                <button id="key-D" onclick="verifyChoosedLetter('D')">D</button>
+                <button id="key-E" onclick="verifyChoosedLetter('E')">E</button>
+                <button id="key-F" onclick="verifyChoosedLetter('F')">F</button>
+                <button id="key-G" onclick="verifyChoosedLetter('G')">G</button>
+                <button id="key-H" onclick="verifyChoosedLetter('H')">H</button>
+                <button id="key-I" onclick="verifyChoosedLetter('I')">I</button>
+            </div>
+
+            <div class="keys">
+                <button id="key-J" onclick="verifyChoosedLetter('J')">J</button>
+                <button id="key-K" onclick="verifyChoosedLetter('K')">K</button>
+                <button id="key-L" onclick="verifyChoosedLetter('L')">L</button>
+                <button id="key-M" onclick="verifyChoosedLetter('M')">M</button>
+                <button id="key-N" onclick="verifyChoosedLetter('N')">N</button>
+                <button id="key-O" onclick="verifyChoosedLetter('O')">O</button>
+                <button id="key-P" onclick="verifyChoosedLetter('P')">P</button>
+                <button id="key-Q" onclick="verifyChoosedLetter('Q')">Q</button>
+                <button id="key-R" onclick="verifyChoosedLetter('R')">R</button>
+            </div>
+
+            <div class="keys">
+                <button id="key-S" onclick="verifyChoosedLetter('S')">S</button>
+                <button id="key-T" onclick="verifyChoosedLetter('T')">T</button>
+                <button id="key-U" onclick="verifyChoosedLetter('U')">U</button>
+                <button id="key-V" onclick="verifyChoosedLetter('V')">V</button>
+                <button id="key-W" onclick="verifyChoosedLetter('W')">W</button>
+                <button id="key-X" onclick="verifyChoosedLetter('X')">X</button>
+                <button id="key-Y" onclick="verifyChoosedLetter('Y')">Y</button>
+                <button id="key-Z" onclick="verifyChoosedLetter('Z')">Z</button>
+                <button id="btnNewGame">🎮</button>
+            </div>
+        </div>
+
+        <div id="clue"></div>
+
+        <!-- Modal -->
+        <div class="modal t-modal primary animate__animated animate__tada" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&#10006;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="refreshPage()">Play Again</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- end modal -->
+        
+        <button class="giveup" id="giveup" tabindex="-1"><a href="index.html">Give Up</a></button>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
