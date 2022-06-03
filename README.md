@@ -1,7 +1,7 @@
 ![Hangman Game](https://user-images.githubusercontent.com/103202544/171761049-1a7a6b80-fee0-4b15-8dc7-a643cd8004d0.png)
 
 
-# **(THE STRANGER) HANGMAN GAME** 👩‍💻
+# **(THE STRANGE) HANGMAN GAME** 👩‍💻
 
 ### ℹ️ About this challenge:
 
