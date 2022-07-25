@@ -26,4 +26,4 @@ It is functional on computers, mobile phones and tablets.
 * <a href="https://qbrubs.github.io/hangman_game/index.html">Hangman Game</a>
 * <a href="https://linkedin.com/in/qbrubs/">LinkedIn</a>
 
-##❗The website it's not responsible yet, but it will be soon!
+
